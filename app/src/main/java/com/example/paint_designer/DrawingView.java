@@ -34,7 +34,7 @@ public class DrawingView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        // Рисуем всю историю
+
         for(DrawPath drawPath : paths) {
             canvas.drawPath(drawPath.path, drawPath.paint);
         }
